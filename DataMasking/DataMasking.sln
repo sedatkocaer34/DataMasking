@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31229.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataMasking", "DataMasking\DataMasking.csproj", "{345B8634-6964-4969-86FA-414275A40C95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{345B8634-6964-4969-86FA-414275A40C95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{345B8634-6964-4969-86FA-414275A40C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{345B8634-6964-4969-86FA-414275A40C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{345B8634-6964-4969-86FA-414275A40C95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {40351D78-4079-49BC-B96A-8DB7B661540A}
+	EndGlobalSection
+EndGlobal
