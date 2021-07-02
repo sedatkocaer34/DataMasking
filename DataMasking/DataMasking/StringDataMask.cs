@@ -8,19 +8,19 @@ namespace DataMasking
     {
 
 
-        public static string CreateNewMask(string data,int startIndex = 0)
+        public static string CreateNewMask(string data,int startIndexLenght = 1)
         {
             var dataLength = GetDataLenght(data);
             var maskingCount = CreateRandomLenght(dataLength,5);
-            var mask = Mask(maskingCount, data, startIndex);
+            var mask = Mask(maskingCount, data, startIndexLenght);
 
             return mask;
         }
 
-        private static string Mask(int maskingCount, string data, int startIndex)
+        private static string Mask(int maskingCount, string data, int startIndexLenght)
         {
             var maskingSign = '*';
-            var mask = string.Concat(data[0], "".PadRight(maskingCount, maskingSign));
+            var mask = string.Concat(data.Substring(0, startIndexLenght), "".PadRight(maskingCount, maskingSign));
 
             return mask;
         }

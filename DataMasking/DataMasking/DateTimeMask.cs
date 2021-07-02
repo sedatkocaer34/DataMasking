@@ -4,11 +4,11 @@ using System.Text;
 
 namespace DataMasking
 {
-    public class DateTimeMask
+    public static class DateTimeMask
     {
-        public static string CreateDatetimeMask()
-        {
+        //public static string CreateDatetimeMask()
+        //{
 
-        }
+        //}
     }
 }
