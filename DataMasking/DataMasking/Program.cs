@@ -33,6 +33,9 @@ namespace DataMasking
             var dateResponse = DateTimeMask.CreateNewMask(new DateTime(int.Parse(yearValue), int.Parse(monthValue), int.Parse(dayValue)));
             Console.WriteLine("Masking Date Value =>" + " " + dateResponse);
             #endregion
+
+
+            Console.Write(CreditCardMasking.CreateNewMask("1234-5678-9101-1121"));
         }
     }
 }
