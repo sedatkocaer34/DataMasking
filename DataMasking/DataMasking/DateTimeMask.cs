@@ -32,7 +32,7 @@ namespace DataMasking
         {
             var maskingSign = '*';
 
-            var maskValue = string.Concat(Year.Substring(3, 1), "".PadRight(1, maskingSign));
+            var maskValue = string.Concat(Year.Substring(0, 3), "".PadRight(1, maskingSign));
             return maskValue;
         }
 

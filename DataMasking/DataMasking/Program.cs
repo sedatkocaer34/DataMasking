@@ -6,6 +6,8 @@ namespace DataMasking
     {
         static void Main(string[] args)
         {
+
+            #region String Mask
             Console.WriteLine("Name =>");
             var nameValue = Console.ReadLine();
 
@@ -14,9 +16,23 @@ namespace DataMasking
 
             var nameMask = StringDataMask.CreateNewMask(nameValue);
             var surNameMask = StringDataMask.CreateNewMask(surnameValue);
-            Console.WriteLine("Masking Value =>"+ " " + nameMask + " " + surNameMask);
+            Console.WriteLine("Masking Value =>" + " " + nameMask + " " + surNameMask);
+            #endregion
 
-            Console.WriteLine(DateTimeMask.CreateNewMask(DateTime.Now));
+
+            #region Date Masking
+            Console.WriteLine("Day =>");
+            var dayValue = Console.ReadLine();
+
+            Console.WriteLine("Month =>");
+            var monthValue = Console.ReadLine();
+
+            Console.WriteLine("Year =>");
+            var yearValue = Console.ReadLine();
+
+            var dateResponse = DateTimeMask.CreateNewMask(new DateTime(int.Parse(yearValue), int.Parse(monthValue), int.Parse(dayValue)));
+            Console.WriteLine("Masking Date Value =>" + " " + dateResponse);
+            #endregion
         }
     }
 }
